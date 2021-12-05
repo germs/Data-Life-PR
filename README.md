@@ -21,4 +21,4 @@ Generative Art Tutorial (1): https://gorillasun.de/blog/Making-of-Gateway <br>
 Generative Art Tutorial (2): https://gorillasun.de/blog/Making-of-Parasite <br>
 Generative Art Example: https://generativeartistry.com/tutorials/hours-of-dark/ <br>
 Canvas-based Game Developer Frame: https://github.com/CodeDraken/canvas-game-dev-boilerplate <br>
-Exploring generative spaces: a quickstart to generative art - GitHub Universe 2020 (with paper.js):  https://www.youtube.com/watch?v=meqHPIOzk-U
+A Quickstart to Generative Art - GitHub Universe 2020 (with paper.js):  https://www.youtube.com/watch?v=meqHPIOzk-U
