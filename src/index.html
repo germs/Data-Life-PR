@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>COVIDA-19 Mint</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="styles.css">
+  </head>
+    
+  <body>
+    <h1>COVIDA-19 Mint</h1>
+    <div id="MintButton" style="width:300px;height:300px"></div>
+    <button onclick="MintNFT()">Mint NFT</button>
+    <div id="gameContainer">
+        <canvas id="COVIDA19Canvas" width="1080" height="1080"></canvas>
+    </div>
+    <img src="" id="COVIDA-19" height = "480"/>
+    <script>
+      console.log('synthezing new life');
+      catchCOVIDA()
+        .then(response => {
+            console.log('nice');
+        })
+        .catch(error => {
+          console.log('error!');
+          console.error(error);
+      });
+      async function catchCOVIDA() {
+          const response = await fetch('covida.jpg');
+          const blob = await response.blob();
+          document.getElementById("COVIDA-19").src = URL.createObjectURL(blob);
+      }
+      fetch('covida.jpg')
+        .then(response => {
+          console.log(response);
+          return response.blob();
+        })
+        .then(blob => {
+          console.log(blob);
+          document.getElementById("COVIDA-19").src = URL.createObjectURL(blob);
+        })
+        .catch(error => {
+          console.log('Error!');
+          console.error(error);
+        });
+      getData();
+      async function getData() {
+        const response = await fetch('test.csv')
+        const data = await response.text();
+        const table = data.split('\n').slice(1);
+        table.forEach(row => {
+          const columns = row.split(',');
+          const id = columns[0];
+          const sex = columns[1];
+          const city = columns[2];
+          const confirmed = columns[3];
+          const age_group = columns[4];
+        console.log(sex, age_group, city, confirmed);
+        });
+      }
+    </script>
+
+  </body>
+
+</html>
