@@ -4,7 +4,7 @@ Data life is a simple code that will simulate life with parameterized datasets. 
 
 ## Requirements
 
- p5.js (v1.4.0);
+ p5.js (v1.4.0) <br>
  node.js (v16.13.1);
  paper.js (v0.12.15);
  GitKraken (v8.1.1);
