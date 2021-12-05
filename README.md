@@ -4,11 +4,11 @@ Data life is a simple code that will simulate life with parameterized datasets. 
 
 ## Requirements
 
- p5.js (v1.4.0)
- node.js (v16.13.1)
- paper.js (v0.12.15)
- GitKraken (v8.1.1)
- http-server (v14.0.0)
+ p5.js (v1.4.0);
+ node.js (v16.13.1);
+ paper.js (v0.12.15);
+ GitKraken (v8.1.1);
+ http-server (v14.0.0);
  
 ## Roadmap
 The platform essentially integrates each minter's opportunity with the unique data from each of the warriors that lost the battle to COVID-19 in Puerto Rico. As a homage to the people of today's age, a ubiqutuous token will be generated from specific features that have been shared for every ID in the dataset. As of today, the GitHub repo supports a Mark-Up program with the scripts for preprocessing of the dataset and generating the specifications for an art piece as an NFT. Future plans include integrating the dataset's parsed parameters as a unique ID for the minting process on the complete release of all the 3272 NFT as an unrepeatable art collection. 
